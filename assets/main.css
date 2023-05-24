@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
-*{
+body{
     font-family:"Lato";
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 }
 .clear{
     clear:both;
@@ -45,8 +48,18 @@
 }
 
 .dark-blue h1, .dark-blue-bottom h1, .dark-blue h2, .dark-blue p, .dark-blue-bottom p, .dark-blue li{ color:#fff;}
-h1{font-size: 40px; font-weight:900}
+h1{
+    font-size:32px;
+    font-weight:900;
+}
+@media (min-width: 768px){
+    h1{font-size: 40px; font-weight:900}
+}
 h2, h3{font-size: 24px;font-weight:900}
+h2{
+    margin-top:20px;
+    margin-bottom:20px;
+}
 .dark-blue img{
     float:left;
     width:96px;
